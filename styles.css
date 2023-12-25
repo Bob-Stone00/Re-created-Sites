@@ -1,0 +1,346 @@
+html {
+    max-width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/*Navigation Starts*/
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+}
+
+.nav-div1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.1px solid rgb(219, 219, 219);
+}
+
+
+
+.nav-div1 h4 {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.nav-div1-icon {
+    padding-bottom: 2px;
+    height: 20px;
+    width: 15px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav-links > div ul li {
+    display: inline-flex;
+    list-style-type: none;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.nav-links > div ul {
+    padding: 0;
+}
+
+.nav-links > div ul li select {
+    border: none;
+}
+
+.nav-links > div ul li select option {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.nav-btn {
+    border: none;
+    background-color: black;
+    color:white;
+    font-weight: 600;
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+/*Navigation Ends*/
+
+/*Header starts*/
+header {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.3rem;
+    font-weight: 790;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-weight:300;
+    margin-top: 10px;
+}
+
+/*Header ends*/
+
+/*Background Triangles*/
+main {
+    max-width: 100%;
+    position: relative;
+
+}
+
+.background-triangles {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+
+.Triangle-1 {
+    width:700px;
+    height:650px;
+    clip-path: polygon(0% 100%,50% 0%,100% 100%);
+    background:linear-gradient(to bottom right, #EC9F05,pink,#FF4E00);
+    transform: rotate(90deg);
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+.Triangle-2 {
+    width:700px;
+    max-height:650px;
+    clip-path: polygon(0% 100%,50% 0%,100% 100%);
+    background:linear-gradient(to bottom right, rgb(170, 117, 170),rgb(137, 210, 223),pink,rgb(253, 217, 149));
+    transform: rotate(-90deg);
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color {
+    0% {background:linear-gradient(to bottom right, rgb(170, 117, 170),rgb(137, 210, 223),pink,rgb(253, 217, 149));}
+    50% {background:linear-gradient(to bottom right, #EC9F05,pink,#FF4E00);}
+    100% {background:linear-gradient(to bottom right, #12c2e9,#c471ed,#f64f59);}
+}
+/*Background Triangles*/
+
+/*main contents*/
+
+.main-content {
+    background:rgba (255,255,255,10.90);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(8.4px);
+    border: 1px solid rgba(252,251,251, 0.99);
+    width: 80%;
+    height: 720px;
+    margin: 0 auto;
+    position: absolute;
+    top:10%;
+    left:10%;
+    border-radius: 7px;
+    background-color: rgba(255,255,255, 0.50);
+}
+
+.upper-div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-bottom: 1px solid rgb(179, 176, 176);
+}
+
+.middle-div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-bottom: 1px solid rgb(179, 176, 176);
+}
+
+.upper-div > div img {
+    border-radius: 4px;
+    padding-bottom: 15px;
+    box-shadow: 1px 1px 0.1px 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+.image2 {
+    padding-top: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.btn-style {
+    color:gray;
+    background-color: rgb(214, 208, 208);
+    padding: 5px;
+    border-radius: 1px;
+    font-size: 0.7rem;
+    width: fit-content;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.upper-div > div h1 {
+    font-weight: 900;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.upper-div-p {
+    color:rgb(68, 68, 68);
+    font-weight: 100;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.upper-div-p2 {
+    color:rgb(68, 68, 68);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+.upper-div-btn {
+    border: none;
+    background-color: black;
+    color:white;
+    font-weight: 600;
+    border-radius: 5px;
+    height: 35px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.middle-div1 {
+   margin-left: 20px;
+   padding-bottom: 25px;
+   
+}
+
+.middle-div1 h1 {
+    margin: 0;
+}
+
+.image5 {
+    border-radius: 5px;
+    margin-top: 33px;
+    object-fit: cover;
+}
+
+.bottom-div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 20px;
+}
+
+.bottom-div1 > div h1 {
+    margin: 0;
+}
+
+
+.bottom-div1{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.bottom-div .btn-style {
+    margin-left: 60px;
+}
+
+.bottom-div2 {
+    padding-left: 10px;
+}
+
+.bottom-div-btn {
+    border:1px solid gray;
+    border-radius: 4px;
+    padding: 9px;
+    background-color: transparent;
+    color:black;
+    font-weight: 700;
+    margin-top: 75px;
+}
+
+.upper-div-p3 {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 7px;
+
+}
+
+.bottom-div3 {
+    margin-left: 150px;
+   
+}
+
+
+
+footer {
+    position: relative;
+    top:200px;
+    border-top: 0.4px solid gray;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-contents {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding-top: 20px;
+}
+
+.footer-contents > div ul {
+    list-style-type: none;
+    padding: o;
+    color:gray;
+    
+}
+
+.footer-contents > div ul li {
+    font-weight: 100;
+    font-size: small;
+}
+
+.footer-contents > div ul li b {
+    color:black;
+    font-weight: 800;
+}
+
+
+
+footer p {
+    text-align: center;
+    color:gray;
+    font-size: small;
+   
+}
+
+
+
+
+
+
